@@ -1,0 +1,129 @@
+:root {
+    --primaryColor: rgb(181, 230, 29);
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGrey: papayawhip;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s linear;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    color: var(--mainBlack);
+    background: transparent;
+    font-family: "Lato", sans-serif;
+  }
+  /* --------------- Navbar ---------------- */
+  .navbar {
+    position: sticky;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: papayawhip;
+    z-index: 1;
+    /* box-shadow: 0.5px 0.5px 0.5px 0.5px #acb5b8; */
+    border-bottom: 1px solid rgb(219, 219, 219);
+  }
+  .navbar-center {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0 1.5rem;
+    width: 100%;
+  }
+  .nav-title{
+    text-transform: uppercase;
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+  }
+  /* --------------- End of Navbar ---------------- */
+
+  .product-image img{
+      width: 500px;
+      height: 400px;
+  }
+
+  .form-control{
+    width: 700px;
+  }
+  .desc{
+    height: 80px;
+  }
+
+  .edit-product{
+      display: flex;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(181, 230, 29);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    /* opacity: 0.7; */
+    background-color: papayawhip;
+    color: blue;
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .nav-title{
+      font-size: 19px;
+      font-weight: bold;
+    }
+    .form-control{
+      width: 254px;
+    }
+    .edit-product{
+      display: block;
+      bottom: 0;
+    }
+    .card{
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .nav-title{
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .form-control{
+      width: 400px;
+    }
+    .edit-product{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+
+  }
+  

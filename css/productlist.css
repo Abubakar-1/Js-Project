@@ -1,0 +1,91 @@
+:root {
+    --primaryColor: rgb(181, 230, 29);
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGrey: papayawhip;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s linear;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    color: var(--mainBlack);
+    background: papayawhip;
+    font-family: "Lato", sans-serif;
+  }
+  /* --------------- Navbar ---------------- */
+  /* --------------- Navbar ---------------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: papayawhip;
+  z-index: 1;
+  /* box-shadow: 0.5px 0.5px 0.5px 0.5px #acb5b8; */
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+.navbar-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+.nav-icon {
+  font-size: 1.5rem;
+}
+.cart-btn {
+  position: relative;
+  cursor: pointer;
+}
+.cart-items {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--primaryColor);
+  padding: 0 5px;
+  border-radius: 30%;
+  color: var(--mainWhite);
+}
+.nav-title{
+  text-transform: uppercase;
+  text-align: center;
+  color: blue;
+  font-size: 30px;
+}
+/* --------------- End of Navbar ---------------- */
+  /* --------------- End of Navbar ---------------- */
+
+  .table{
+    width: 100%;
+    background-color: transparent;
+   
+    
+}td,th{
+    border: 1px solid black ; 
+    border-spacing:10px;
+    
+}
+.row img{
+    width: 30px;
+    height: 30px;
+}
+
+.cancelbtn {
+  width: 90px;
+  padding: 10px 18px;
+  background-color: red;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+

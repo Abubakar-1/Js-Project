@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Khamsah Superstore</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar-center">
+        <a href="index.html"><div class="nav-title"><img src="images/khamsahsuperstorelogo.png" alt="" style="height: 50px;"></div></a>
+        <form class="form-inline">
+          <input type="search" name="Search" id="search" class="form-control mr-sm-2" style="width: 500px;" placeholder="Search a product">
+          <button class="btn my-2 btn-outline-primary my-sm-0" type="submit">Search</button>
+        </form>
+        <div class="cart-btn">
+          <span class="nav-icon">
+            <span style="cursor: pointer;" onclick="openNav()">
+              <span class="icon-name">Menu</span>
+              <i class="fa fa-bars"></i>
+            </span>
+          </span>&nbsp;&nbsp;&nbsp;
+          <span class="nav-icon">
+            <span class="icon-name">Log In</span>
+            <i class="fa fa-sign-in-alt" onclick="document.getElementById('login').style.display='block'"></i>
+          </span>&nbsp;&nbsp;&nbsp;
+            <span class="nav-icon">
+              <span class="icon-name">Cart</span>
+              <i class="fas fa-cart-plus" onclick="openCart()"></i>
+            </span>
+              <div class="cart-items">1</div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- hero -->
+    <header class="hero">
+      <div class="banner">
+        <h1 class="banner-title"><em>HURRY UP SHOP n CARRY!!!</em></h1>
+        <button onclick="openNav()" class="banner-btn">shop now</button>
+      </div>
+    </header>
+    <!-- end of hero -->
+
+    <!-- products -->
+    <section class="products">
+      <div class="section-title">
+        <h2>products</h2>
+      </div>
+        <div class="products-center">
+          <!-- single product -->
+          <article class="product" id="product1">
+            <div class="img-container">
+              <img
+                src="./images/product-1.jpeg"
+                alt="product"
+                class="product-img"  onclick="document.getElementById('product-detail').style.display='block'" id="1"
+              />
+              <button onclick="openCart()"class="bag-btn" id="1">
+                <i class="fas fa-shopping-cart"></i>
+                add to cart
+              </button>
+            </div>
+  
+            <h3>queen panel bed</h3>
+            <h4>$10.99</h4>
+          </article>
+
+          <article class="product">
+            <div class="img-container">
+              <img
+                src="./images/product-2.jpeg"
+                alt="product"
+                class="product-img"  onclick="document.getElementById('product-detail').style.display='block'"
+              />
+              <button class="bag-btn" onclick="openCart()" id="1">
+                <i class="fas fa-shopping-cart"></i>
+                add to cart
+              </button>
+            </div>
+  
+            <h3>king panel bed</h3>
+            <h4>$45</h4>
+          </article>
+
+          <article class="product">
+            <div class="img-container">
+              <img
+                src="./images/product-3.jpeg"
+                alt="product"
+                class="product-img"  onclick="document.getElementById('product-detail').style.display='block'"
+              />
+              <button class="bag-btn" onclick="openCart()" id="1">
+                <i class="fas fa-shopping-cart"></i>
+                add to cart
+              </button>
+            </div>
+  
+            <h3>single panel bed</h3>
+            <h4>$12.99</h4>
+          </article>
+
+          <article class="product">
+            <div class="img-container">
+              <img
+                src="./images/product-4.jpeg"
+                alt="product"
+                class="product-img"  onclick="document.getElementById('product-detail').style.display='block'"
+              />
+              <button class="bag-btn" onclick="openCart()" id="1">
+                <i class="fas fa-shopping-cart"></i>
+                add to cart
+              </button>
+            </div>
+  
+            <h3>twin bed</h3>
+            <h4>$22.99</h4>
+          </article>
+
+          <article class="product">
+            <div class="img-container">
+              <img
+                src="./images/product-5.jpeg"
+                alt="product"
+                class="product-img"  onclick="document.getElementById('product-detail').style.display='block'"
+              />
+              <button class="bag-btn" onclick="openCart()" id="1">
+                <i class="fas fa-shopping-cart"></i>
+                add to cart
+              </button>
+            </div>
+  
+            <h3>fridge</h3>
+            <h4>$88.99</h4>
+          </article>
+
+          <article class="product">
+            <div class="img-container">
+              <img
+                src="./images/product-6.jpeg"
+                alt="product"
+                class="product-img"  onclick="document.getElementById('product-detail').style.display='block'"
+              />
+              <button class="bag-btn" onclick="openCart()" id="1">
+                <i class="fas fa-shopping-cart"></i>
+                add to cart
+              </button>
+            </div>
+  
+            <h3>dresser</h3>
+            <h4>$32.99</h4>
+          </article>
+
+          <article class="product">
+            <div class="img-container">
+              <img
+                src="./images/product-7.jpeg"
+                alt="product"
+                class="product-img"  onclick="document.getElementById('product-detail').style.display='block'"
+              />
+              <button class="bag-btn" onclick="openCart()" id="1">
+                <i class="fas fa-shopping-cart"></i>
+                add to cart
+              </button>
+            </div>
+  
+            <h3>couch </h3>
+            <h4>$45.99</h4>
+          </article>
+
+          <article class="product">
+            <div class="img-container">
+              <img
+                src="./images/product-8.jpeg"
+                alt="product"
+                class="product-img"  onclick="document.getElementById('product-detail').style.display='block'"
+              />
+              <button class="bag-btn" onclick="openCart()" id="1">
+                <i class="fas fa-shopping-cart"></i>
+                add to cart
+              </button>
+            </div>
+  
+            <h3>table</h3>
+            <h4>$16</h4>
+          </article>
+        </div>      
+    </section>
+    <div class="cart-overlay">
+      <div class="cart" id="cart1">
+        <span class="close-cart"><i class="far fa-window-close" onclick="closeCart()"></i></span>
+        <h2>your cart</h2>
+        <div class="cart-content">
+          <!-- cart item -->
+          <div class="cart-item">
+             <!-- item image -->
+             <img src= "images/product-1.jpeg" alt="product" />
+             <!-- item info -->
+             <div>
+               <h4>Queen Panel Bed</h4>
+               <h5>$12</h5>
+               <span class="remove-item" id=1>remove</span>
+             </div>
+             <!-- item functionality -->
+             <div>
+                 <i class="fas fa-chevron-up" id=1></i>
+               <p class="item-amount">
+                 1
+               </p>
+                 <i class="fas fa-chevron-down" id=1></i>
+             </div>
+           <!-- cart item -->
+       </div>
+       <div class="cart-footer">
+         <h3>your total : $<span class="cart-total">10.99</span></h3>
+         <button class="clear-cart banner-btn">clear cart</button><br><br><br><br><br>
+       </div>
+     </div>
+   </div>
+          </div>
+             
+    <!-- end of cart -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+                   <a href="wears.html"> WEARS</a><br>
+                   <br>
+                   <a href="furnitures.html">FURNITURES</a> <br> 
+                   <br>
+                   <a href="kitchen items.html">KITCHEN ITEMS</a><br>
+                   <br>
+                   <a href="refrigeratorsandfreezers.html">REFRIGERATORS AND FREEZERS</a><br>
+                   <br>
+            
+      </div>
+    </div>
+    <!-- modals -->
+    <!-- start of login modal -->
+    <div id="login" class="modal">
+  
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="images/khamsahsuperstorelogo.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <h1 style="text-align: center; color: blue;">LOG IN</h1>
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit" style="width: 100%;">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="register()" class="registerbtn">Register</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    <!-- end of login modal -->
+    <!-- start of register modal -->
+    <div id="register" class="modal">
+  
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('register').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="images/khamsahsuperstorelogo.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <h1 style="text-align: center; color: blue;">REGISTER</h1>
+          <label for="fname"><b>First Name</b></label>
+          <input type="text" placeholder="First Name" name="fname" required>
+
+          <label for="sname"><b>Surname</b></label>
+          <input type="text" placeholder="Surname" name="sname" required>
+
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Create Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Create Password" name="psw" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Re-type Password" name="psw" required>
+            
+          <button type="submit" style="width: 100%;">Register</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+      </form>
+    </div>
+    <!-- end of register modal -->
+    <!-- start of product-detail modal -->
+    <div id="product-detail" class="modal">
+      <form class="modal-content animate">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('product-detail').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="images/khamsahsuperstorelogo.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <h1 style="text-align: center; color: blue;">PRODUCT-DETAIL</h1>
+          <div class="card">
+            <img src="images/product-3.jpeg" alt="Denim Jeans" style="width:100%">
+            <h1>Single Panel Bed</h1>
+            <p class="price">$45</p>
+            <p>This bed is a King Panel Bed made in China</p>
+            <p><button>Add to Cart</button></p>
+          </div>   
+        </div>
+        </form>
+      </div>
+    <!-- end of product-detail -->
+
+    <script src="app.js"></script>
+    <script>
+  function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+function openCart() {
+  document.getElementById("cart1").style.transform = "translateX(0%)"
+}
+
+function closeCart() {
+  document.getElementById('cart1').style.transform = 'translateX(100%)'
+}
+function register() {
+  document.getElementById('login').style.display='none'
+  document.getElementById('register').style.display='block'
+}
+    </script>
+  </body>
+</html>
+<!-- add product, list products, edit product, product detail, signup, login -->
